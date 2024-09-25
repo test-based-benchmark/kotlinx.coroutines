@@ -311,3 +311,7 @@ artifacts {
 tasks.named("dokkaHtmlPartial") {
     dependsOn(jvmJar)
 }
+
+tasks.named("koverXmlReport") {
+    dependsOn(jvmTest)
+}
